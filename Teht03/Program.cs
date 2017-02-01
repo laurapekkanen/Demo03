@@ -10,6 +10,15 @@ namespace Teht03
     {
         static void Main(string[] args)
         {
+            TV tv = new TV();
+            tv.IsOn = true;
+            tv.Channel = 2;
+            tv.Volume = 50;
+            
+            Console.WriteLine("Channel is " + tv.Channel);
+            Console.WriteLine("Volume is " + tv.Volume);
+
+            tv.ChangeChannel();
         }
     }
 }
